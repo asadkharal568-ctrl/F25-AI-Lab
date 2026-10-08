@@ -1,0 +1,15 @@
+$ python3 lab3_search.py
+BFS path ['A', 'B', 'E', 'G'] visit order ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+DFS path ['A', 'B', 'E', 'G'] visit order ['A', 'B', 'D', 'E', 'G']
+DLS 1 CUTOFF None order ['A', 'B', 'C']
+DLS 2 CUTOFF None order ['A', 'B', 'D', 'E', 'C', 'F']
+DLS 3 FOUND ['A', 'B', 'E', 'G'] order ['A', 'B', 'D', 'E', 'G']
+DLS 4 FOUND ['A', 'B', 'E', 'G'] order ['A', 'B', 'D', 'E', 'G']
+IDDFS max 1 attempts [(0, 'CUTOFF', None), (1, 'CUTOFF', None)] result None
+IDDFS max 2 attempts [(0, 'CUTOFF', None), (1, 'CUTOFF', None), (2, 'CUTOFF', None)] result None
+IDDFS max 3 attempts [(0, 'CUTOFF', None), (1, 'CUTOFF', None), (2, 'CUTOFF', None), (3, 'FOUND', ['A', 'B', 'E', 'G'])] result ['A', 'B', 'E', 'G']
+IDDFS max 4 attempts [(0, 'CUTOFF', None), (1, 'CUTOFF', None), (2, 'CUTOFF', None), (3, 'FOUND', ['A', 'B', 'E', 'G'])] result ['A', 'B', 'E', 'G']
+BFS weighted topology ['A', 'C', 'G'] hops 2 cost 12 processing ['A', 'B', 'C', 'D', 'E', 'F', 'G']
+UCS weighted ['A', 'B', 'E', 'G'] cost 3 processing ['A', 'B', 'C', 'E', 'D', 'G'] independent sum 3
+start=goal ['A']
+unreachable None
