@@ -1,0 +1,22 @@
+$ python3 lab4_astar_audit.py
+Heuristic audit: node | h | true remaining | admissible
+S | 5 | 6 | True
+A | 4 | 5 | True
+B | 4 | 5 | True
+C | 2 | 3 | True
+G | 0 | 0 | True
+Consistency checks:
+S->A: 5 <= 1+4 = 5 : True
+S->B: 5 <= 4+4 = 8 : True
+A->C: 4 <= 2+2 = 4 : True
+B->G: 4 <= 5+0 = 5 : True
+C->G: 2 <= 3+0 = 3 : True
+
+A* supplied path ['S', 'A', 'C', 'G'] cost 6 independent sum 6 expanded 3
+processed (node,g,h,f): [('S', 0, 5, 5), ('A', 1, 4, 5), ('C', 3, 2, 5), ('G', 6, 0, 6)]
+
+UCS h=0 path ['S', 'A', 'C', 'G'] cost 6 independent sum 6 expanded 4
+processed (node,g,h,f): [('S', 0, 0, 0), ('A', 1, 0, 1), ('C', 3, 0, 3), ('B', 4, 0, 4), ('G', 6, 0, 6)]
+
+A* overestimate h(C)=10 path ['S', 'B', 'G'] cost 9 independent sum 9 expanded 3
+processed (node,g,h,f): [('S', 0, 5, 5), ('A', 1, 4, 5), ('B', 4, 4, 8), ('G', 9, 0, 9)]
