@@ -1,0 +1,16 @@
+$ python3 lab2_model.py
+step | previous | percept | target | command
+1 | None | (29, True) | COOL | SEND
+2 | COOL | (29, True) | COOL | NO COMMAND
+3 | COOL | (20, True) | IDLE | SEND
+4 | IDLE | (26, True) | IDLE | NO COMMAND
+5 | IDLE | (19, True) | WARM | SEND
+6 | WARM | (29, False) | ECO | SEND
+
+$ python3 lab2_percepts.py
+1 (29, True) target mode COOL
+2 (29, True) target mode COOL
+3 (20, True) target mode IDLE
+4 (26, True) target mode IDLE
+5 (19, True) target mode WARM
+6 (29, False) target mode ECO
