@@ -1,0 +1,13 @@
+$ python3 lab1_compare.py
+case | score | complete | demo_probability | symbolic | threshold | disagreement
+complete_high | 82 | True | 0.81 | Review | Review | False
+complete_low | 68 | True | 0.74 | Hold | Review | True
+incomplete_high | 91 | False | 0.88 | Hold | Review | True
+boundary | 70 | True | 0.70 | Review | Review | False
+
+$ python3 lab1_rules.py
+case | inputs (score, complete, GPA, credits) | expected | actual | reason
+pass | (80, True, 3.2, 15) | Review | Review | all synthetic checks passed
+GPA condition fails | (80, True, 2.4, 15) | Hold | Hold | GPA below 2.5
+credits condition fails | (80, True, 3.2, 11) | Hold | Hold | credits below 12
+score boundary | (70, True, 2.5, 12) | Review | Review | all synthetic checks passed
